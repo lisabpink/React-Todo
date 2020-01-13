@@ -8,22 +8,48 @@ body {
 }
 
 body {
-  background-color:pink;
+    
+    background-image: url(/images/todo.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   margin:100px;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    margin-bottom: 20px;
+   
+    
+  }
+
+  form{
+      display:flex;
+      justify-content: center;
+   
+    margin:20px;
+  }
 .container-md{
     border:2px solid black;
+  
     padding:50px;
     display:flex;
     justify-content: center;
 
+
 }
-/* 
+
 .todo-list{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
+    background-color: #113a4b;
+    opacity: 70%;
+    border-radius: 15px;
     margin:20px;
     padding: 20px;
     
@@ -31,6 +57,7 @@ body {
 }
 p{
     background-color:white;
+   
     margin:20px;
     height:50px;
     padding:15px;
@@ -44,6 +71,13 @@ p{
     text-decoration: line-through;
   }
   .item.completed p {
-    background-color:gray;
+    background-color:rgb(66, 142, 174);
     
-  } */
+  }
+ header{
+    border: 2px solid red;
+  }
+h2{
+    font-size:7rem;
+    color: white;
+}

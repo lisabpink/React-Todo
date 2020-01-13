@@ -2,11 +2,12 @@ import React from 'react';
 import TodoForm from './components/TodoComponents/TodoForm'
 import TodoList from './components/TodoComponents/TodoList'
 import "./components/TodoComponents/Todo.css";
+import todo from './images/todo.jpg';
 
 
 const items = [
   {
-    name: 'Do Dishes',
+    name: 'Do The Stuff',
     id: 123,
     completed: true
   },
@@ -21,17 +22,17 @@ const items = [
     completed: false
   },
   {
-    name: 'Trim Palm Trees',
+    name: 'Clean The Things',
     id: 1246,
     completed: false
   },
   {
-    name: ' Organize Garage',
+    name: ' Organize Thoughts',
     id: 1237,
     completed: false
   },
   {
-    name: 'Grocery Shop',
+    name: 'Meditate',
     id: 1248,
     completed: false
   }
@@ -87,9 +88,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div >
         <div className="header">
-          <h2>Welcome to Lisa's Todo App!</h2>
+          <h2>LISA'S TO DO LIST</h2>
           <TodoForm addItem={this.addItem}/>
         </div>
         <TodoList items={this.state.items}

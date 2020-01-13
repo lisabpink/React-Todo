@@ -35,7 +35,7 @@ class TodoForm extends React.Component {
           type="text"
           name="item"
         />
-        <button>Add</button>
+        <button  type="button" class="btn btn-outline-info">Add New Task</button>
       </form>
     );
   }
